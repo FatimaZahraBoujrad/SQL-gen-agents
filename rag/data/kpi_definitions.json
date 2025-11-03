@@ -1,0 +1,38 @@
+[
+  {
+    "type": "kpi_definition",
+    "kpi_name": "Revenu total mensuel",
+    "description": "Somme totale des montants de ventes effectuées chaque mois.",
+    "formula": "SUM des montants groupée par mois"
+  },
+  {
+    "type": "kpi_definition",
+    "kpi_name": "Nombre de ventes par région",
+    "description": "Nombre total de ventes associées à chaque région géographique.",
+    "formula": "COUNT des ventes groupées par région"
+  },
+  {
+    "type": "kpi_definition",
+    "kpi_name": "Top 5 produits les plus vendus",
+    "description": "Les cinq produits avec le plus grand nombre de ventes.",
+    "formula": "COUNT des ventes par produit, triés par ordre décroissant"
+  },
+  {
+    "type": "kpi_definition",
+    "kpi_name": "Taux de fidélisation des clients",
+    "description": "Pourcentage  de clients ayant effectué plus qu'un achat au fil du temps/ nombre total de clients au fil du temps",
+    "formula": "Clients avec plus d'une vente divisé par le nombre total de clients"
+  },
+  {
+    "type": "kpi_definition",
+    "kpi_name": "Nombre moyen d'interactions support par client",
+    "description": "Indicateur de la charge support : nombre moyen d'interactions par client unique.",
+    "formula": "COUNT des interactions divisé par COUNT de clients distincts"
+  },
+  {
+    "type": "kpi_definition",
+    "kpi_name": "Revenu moyen par employé par région",
+    "description": "Moyenne des revenus générés dans les régions couvertes par chaque employé.",
+    "formula": "SOMME des ventes dans la région de chaque employé divisée par nombre d'employés"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "type": "table_schema",
+    "table_name": "ventes",
+    "columns": [
+      { "name": "id_vente", "type": "INT", "description": "Identifiant unique de la vente" },
+      { "name": "montant", "type": "DECIMAL", "description": "Montant total de la vente" },
+      { "name": "date_vente", "type": "DATE", "description": "Date de la vente" },
+      { "name": "id_client", "type": "INT", "description": "Identifiant du client ayant effectué la vente" },
+      { "name": "id_produit", "type": "INT", "description": "Produit vendu dans cette vente" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "clients",
+    "columns": [
+      { "name": "id", "type": "INT", "description": "Identifiant du client" },
+      { "name": "nom", "type": "VARCHAR", "description": "Nom complet du client" },
+      { "name": "email", "type": "VARCHAR", "description": "Adresse e-mail" },
+      { "name": "region", "type": "VARCHAR", "description": "Région géographique du client" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "produits",
+    "columns": [
+      { "name": "id", "type": "INT", "description": "Identifiant du produit" },
+      { "name": "nom_produit", "type": "VARCHAR", "description": "Nom du produit" },
+      { "name": "categorie", "type": "VARCHAR", "description": "Catégorie du produit" },
+      { "name": "prix_unitaire", "type": "DECIMAL", "description": "Prix unitaire du produit" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "employes",
+    "columns": [
+      { "name": "id", "type": "INT", "description": "Identifiant de l'employé" },
+      { "name": "nom", "type": "VARCHAR", "description": "Nom complet" },
+      { "name": "poste", "type": "VARCHAR", "description": "Poste ou rôle" },
+      { "name": "region", "type": "VARCHAR", "description": "Région assignée" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "interactions_support",
+    "columns": [
+      { "name": "id", "type": "INT", "description": "Identifiant de l'interaction" },
+      { "name": "id_client", "type": "INT", "description": "Client concerné par l'interaction" },
+      { "name": "sujet", "type": "VARCHAR", "description": "Sujet ou problème évoqué" },
+      { "name": "date_interaction", "type": "DATE", "description": "Date de l'interaction" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "departements",
+    "columns": [
+      { "name": "id", "type": "INT", "description": "Identifiant du département" },
+      { "name": "nom", "type": "VARCHAR", "description": "Nom du département" },
+      { "name": "region", "type": "VARCHAR", "description": "Région du département" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "employes_support",
+    "columns": [
+      { "name": "id", "type": "INT", "description": "Identifiant du support" },
+      { "name": "nom", "type": "VARCHAR", "description": "Nom complet" },
+      { "name": "specialite", "type": "VARCHAR", "description": "Spécialité technique" },
+      { "name": "region", "type": "VARCHAR", "description": "Région assignée" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "produits_stocks",
+    "columns": [
+      { "name": "id", "type": "INT", "description": "Identifiant du stock" },
+      { "name": "id_produit", "type": "INT", "description": "Identifiant du produit lié" },
+      { "name": "quantite", "type": "INTEGER", "description": "Quantité en stock" },
+      { "name": "entrepot", "type": "VARCHAR", "description": "Lieu de stockage" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "clients_prospects",
+    "columns": [
+      { "name": "id", "type": "INT", "description": "Identifiant du prospect" },
+      { "name": "nom", "type": "VARCHAR", "description": "Nom complet" },
+      { "name": "email", "type": "VARCHAR", "description": "Adresse email" },
+      { "name": "region", "type": "VARCHAR", "description": "Région cible" }
+    ]
+  },
+  {
+    "type": "table_schema",
+    "table_name": "ventes_archives",
+    "columns": [
+      { "name": "id_vente", "type": "INT", "description": "Identifiant de la vente archivée" },
+      { "name": "montant", "type": "DECIMAL", "description": "Montant de la vente" },
+      { "name": "date_vente", "type": "DATE", "description": "Date de la vente" },
+      { "name": "id_client", "type": "INT", "description": "Client lié à la vente" },
+      { "name": "id_produit", "type": "INT", "description": "Produit vendu" }
+    ]
+  }
+]
+
